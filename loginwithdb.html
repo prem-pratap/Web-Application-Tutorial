@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Hello</title>
+<style type="text/css">
+div{
+	position:absolute;
+	top:30px;
+	left:100px;
+	width:300px;
+	height:150px;
+	border:2px dashed green;
+	border-radius:20px;
+
+
+}
+</style>
+<script type="text/javascript">
+function loginValidate(){
+	var username=document.loginformDB.uname.value;
+	var password=document.loginformDB.pwd.value;
+	if(username==""||password==""){
+		alert("Fileds cannot be empty ");
+		return false;}
+	else
+		return true;
+}
+
+</script>
+</head>
+
+
+<body>
+<form name="loginformDB" method="POST" action="LoginServletDB">
+<div>
+<br>
+USERNAME <input type="text" name="uname" ><br><br>
+PASSWORD <input type="password" name="pwd"><br><br>
+<input type="submit" value="Submit" style="margin-left:80px" onClick="return loginValidate()">
+</div>
+</form>
+
+</body>
+</html>
