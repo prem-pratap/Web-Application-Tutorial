@@ -22,3 +22,4 @@ public class UserBean {
 		this.password=password;
 	}
 }
+
