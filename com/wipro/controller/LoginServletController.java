@@ -31,16 +31,16 @@ public class LoginServletController extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		PrintWriter out =response.getWriter();
-		String uname=request.getParameter("uname");
+		PrintWriter out =response.getWriter();//to  write out on response page
+		String uname=request.getParameter("uname");// accessing entered username and password
 		String pwd=request.getParameter("pwd");
 		UserBean user=new UserBean();
 		user.setUserName(uname);
 		user.setPassword(pwd);
 		UserDAO dao=new UserDAO();
-		String status=dao.checkUser(user);
+		String status=dao.checkUser(user);//validating whether entered data is present in database or not
 		if(status.equalsIgnoreCase("Success")) 
-			response.sendRedirect("success.html");
+			response.sendRedirect("success.html");//sending redirect to new page
 		else 
 			response.sendRedirect("fail.html");
 		out.close();
