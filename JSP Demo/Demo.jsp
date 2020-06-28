@@ -12,7 +12,7 @@
 <%! String name="Admin"; %>
 <% out.print("Hello "+name); %></br></br><!-- Declaration tag JSP is used to declare fields and methods. -->
 <!-- The jsp scriptlet tag can only declare variables not methods.	The jsp declaration tag can declare variables as well as methods. -->
-How are you? <%=name %>
+How are you ? <%=name %>
 
 </body>
 </html>
