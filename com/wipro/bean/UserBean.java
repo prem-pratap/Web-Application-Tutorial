@@ -5,7 +5,7 @@ public class UserBean {
 	private String password;
 	
 	public UserBean() {}
-	
+	//declaring getters 
 	public String getUserName() {
 		return this.username;
 	}
@@ -13,7 +13,7 @@ public class UserBean {
 	public String getPassword(){
 		return this.password;
 	}
-	
+	//declaring setters
 	public void setUserName(String username) {
 		this.username=username;
 	}
