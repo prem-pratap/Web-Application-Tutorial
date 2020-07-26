@@ -1,5 +1,5 @@
 package com.wipro.dao;
-
+//DAO code
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
